@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+/* Edited by Ian Dumalin */
 
 namespace Oefeningen_EenKlasse
 {
