@@ -1,0 +1,23 @@
+﻿<Window x:Class="Oefening1_Silo.Oef1_SiloList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Oefening1_Silo"
+        mc:Ignorable="d"
+        Title="Oef1_SiloList" Height="550" Width="800">
+    <Grid>
+        <Button x:Name="btnIn1" Content="In Silo 1" HorizontalAlignment="Left" Margin="197,154,0,0" VerticalAlignment="Top" Click="btnInOut_Click" Tag="In100"/>
+        <Button x:Name="btnIn2" Content="In Silo 2" HorizontalAlignment="Left" Margin="197,282,0,0" VerticalAlignment="Top" Click="btnInOut_Click" Tag="In200"/>
+        <Button x:Name="btnIn3" Content="In Silo 3" HorizontalAlignment="Left" Margin="197,397,0,0" VerticalAlignment="Top" Click="btnInOut_Click" Tag="In400"/>
+        <Button x:Name="btnOut1" Content="Out Silo 1" HorizontalAlignment="Left" Margin="573,159,0,0" VerticalAlignment="Top" Click="btnInOut_Click" Tag="Out100"/>
+        <Button x:Name="btnOut2" Content="Out Silo 2" HorizontalAlignment="Left" Margin="573,282,0,0" VerticalAlignment="Top" Click="btnInOut_Click" Tag="Out200"/>
+        <Button x:Name="btnOut3" Content="Out Silo 3" HorizontalAlignment="Left" Margin="573,407,0,0" VerticalAlignment="Top" Click="btnInOut_Click" Tag="Out400"/>
+        <TextBox x:Name="txtIn" HorizontalAlignment="Left" Margin="34,282,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Height="20"/>
+        <TextBox x:Name="txtOut" HorizontalAlignment="Left" Margin="683,282,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Height="20"/>
+        <ProgressBar x:Name="pgbSilo1" HorizontalAlignment="Center" Height="40" Margin="0,149,0,0" VerticalAlignment="Top" Width="160"/>
+        <ProgressBar x:Name="pgbSilo2" HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="160" Margin="0,262,0,0" Maximum="0"/>
+        <ProgressBar x:Name="pgbSilo3" HorizontalAlignment="Center" Height="40" Margin="0,397,0,0" VerticalAlignment="Top" Width="160" Maximum="0"/>
+        <Button x:Name="btnClean" HorizontalAlignment="Center" VerticalAlignment="Top" Content="Silo's reinigen" Margin="10,21,630,483" Click="btnClean_Click" Visibility="Visible" Width="160" Height="30"/>
+    </Grid>
+</Window>
